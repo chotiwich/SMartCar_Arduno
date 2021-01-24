@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Dashboard</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <div  class="card-header">
+    <h1><center><b>SMART CAR CONTROL SYSTEM</b> </center></h1>  
+  </div>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-dark">
+              <div class="inner">
+                <h3 id="temp">0</h3>
+
+                <p>TEMPERATURE</p>
+              </div>
+              <div class="icon">
+                <i id=temp_on class="ion-thermometer" style="color:red; display: none;"></i>
+                <i id=temp_off class="ion-thermometer" style="color:white; "></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-dark">
+              <div class="inner">
+                <h3 id="moisture">53</h3>
+
+                <p>MOISTURE</p>
+              </div>
+              <div class="icon">
+                <i id=moi_on class="ion-flame" style="color:red; display: none;" ></i>
+                <i id=moi_off class="ion-flame" style="color:white" ></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-dark">
+              <div class="inner">
+                <h3 id="light">44</h3>
+                <p>LIGHT INTENSITY</p>
+              </div>
+              <div class="icon">
+                <i id=light_on class="ion-gear-a" style="color:red; display: none;"></i>
+                <i id=light_off class="ion-gear-a" style="color:white"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-dark">
+              <div class="inner">
+                <h3 id="rain">65</h3>
+                <p>MEASURE RAIN</p>
+              </div>
+              <div class="icon">
+                <i id=rain_on class="ion-waterdrop" style="color:blue; display: none;"></i>
+                <i id=rain_off class="ion-waterdrop" style="color:white"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-6">
+            <div class="small-box bg-dark">
+            <img style="-webkit-user-select: none;margin: auto;" src="https://www.mgcars.com/images/mg-models/mgzs/spec/mgzs-model.png" width="700" height="400">
+            <img style="-webkit-user-select: none;margin: auto;" src="https://www.mgcars.com/images/mg-models/mgzs/price/mgzs-model-price.png" width="700" height="400">
+            </div>
+          </div>
+          <!-- ./col -->
+        </div>
+        <!-- /.row -->
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Chotiwich Waradach <a href="Walailak University">Walailak University Software Engineering</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 1.0.0
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+
+<script>
+$(document).ready(function () {
+        setInterval(function () {
+          $.get(
+            "http://thing.tpk-learning.site/61102299_smartcar/get_temp.php",
+            function (data, textStatus, jqXHR) {
+              var a = JSON.parse(data);
+              var t = a[0]['value'];
+              $("#temp").html(t +" °C");
+              if(t<26){
+                $("#temp_off").show();
+                $("#temp_on").hide();
+              }else{
+                $("#temp_off").hide();
+                $("#temp_on").show();
+               
+              }
+      
+            }
+            );
+          $.get(
+            "http://thing.tpk-learning.site/61102299_smartcar/get_moisture.php",
+            function (data, textStatus, jqXHR) {
+              var a = JSON.parse(data);
+              var h = a[0]['value'];
+              $("#moisture").html(h+" g/m3");
+              if(h<85){
+                $("#moi_off").show();
+                $("#moi_on").hide();
+              }else{
+                $("#moi_off").hide();
+                $("#moi_on").show();
+              }
+            }
+          );  
+          
+          $.get(
+            "http://thing.tpk-learning.site/61102299_smartcar/get_light.php",
+            function (data, textStatus, jqXHR) {
+              var a = JSON.parse(data);
+              var l = a[0]['value'];
+              $("#light").html(l+" lux");
+              if(l>30){
+                $("#light_off").show();
+                $("#light_on").hide();
+              }else{
+                $("#light_off").hide();
+                $("#light_on").show();
+              }
+            }
+          ); 
+
+          $.get(
+            "http://thing.tpk-learning.site/61102299_smartcar/get_rain.php",
+            function (data, textStatus, jqXHR) {
+              var a = JSON.parse(data);
+              var r = a[0]['value'];
+              $("#rain").html(r) ;
+              if(r>1023){
+                $("#rain_off").show();
+                $("#rain_on").hide();
+              }else{
+                $("#rain_off").hide();
+                $("#rain_on").show();
+              }
+            }
+            
+          ); 
+
+        }, 50)
+      });
+
+</script>
+
+
+</body>
+</html>
